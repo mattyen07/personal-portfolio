@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import {makeStyles} from '@material-ui/styles';
 import {Typography, Grid, Box} from '@material-ui/core';
 import Typed from 'react-typed'
@@ -28,14 +28,14 @@ const Homepage = () => {
     const classes = styles();
         return (
             <Box className = {classes.container}>
-                <Typography className = {classes.title} variant = "h4">
+                <Typography className = {classes.title} variant = "h3">
                     Matthew Yen
                 </Typography>
                 <br />
                 <Typography className = {classes.subtitle} variant = "h5">
                     <Typed strings = {["I am a Software Test Engineer at VIPRE Security", "I am a Third Year Computer Engineering Student at UBC", "I am an Aspiring Software Developer"]} 
-                    typeSpeed = {30} 
-                    backSpeed = {50} 
+                    typeSpeed = {40} 
+                    backSpeed = {60} 
                     loop >
                     </Typed>
                 </Typography>
