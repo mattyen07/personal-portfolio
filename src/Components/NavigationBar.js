@@ -4,22 +4,10 @@ import {
     AppBar,
     Toolbar,
     Button,
-    ListItem,
-    IconButton,
-    ListItemTest,
-    Divider,
-    List,
     Typography,
-    Box, ButtonBase
+    Box
   } from "@material-ui/core";
   
-import {
-    Menu,
-    AssignmentInd,
-    Home,
-    Apps,
-    ContactMail
-  } from "@material-ui/icons";
 
 import {makeStyles} from "@material-ui/core/styles";
 
@@ -47,11 +35,11 @@ const NavigationBar = () => {
                         <Button style = {{color: 'white'}} component={Link} to="/">
                             Home
                         </Button>
-                        <Button style = {{color: 'white'}} component={Link} to="/experience">
-                            Experience
-                        </Button>
                         <Button style = {{color: 'white'}} component={Link} to="/skills">
                             Skills
+                        </Button>
+                        <Button style = {{color: 'white'}} component={Link} to="/experience">
+                            Experience
                         </Button>
                         <Button style = {{color: 'white'}} component={Link} to="/projects">
                             Projects

@@ -1,15 +1,15 @@
 import React from 'react';
 import {makeStyles} from '@material-ui/styles';
-import {Typography, Grid, Box} from '@material-ui/core';
+import {Typography, Box} from '@material-ui/core';
 import Typed from 'react-typed'
 
 //CSS
 const styles = makeStyles (theme => ({
     title: {
-        color: "tomato"
+        color: "#222"
     },
     subtitle: {
-        color: "tan",
+        color: "#222",
         margin: "3rem"
     },
     container: {
@@ -28,11 +28,11 @@ const Homepage = () => {
     const classes = styles();
         return (
             <Box className = {classes.container}>
-                <Typography className = {classes.title} variant = "h3">
+                <Typography className = {classes.title} variant = "h1">
                     Matthew Yen
                 </Typography>
                 <br />
-                <Typography className = {classes.subtitle} variant = "h5">
+                <Typography className = {classes.subtitle} variant = "h4">
                     <Typed strings = {["I am a Software Test Engineer at VIPRE Security", "I am a Third Year Computer Engineering Student at UBC", "I am an Aspiring Software Developer"]} 
                     typeSpeed = {40} 
                     backSpeed = {60} 
