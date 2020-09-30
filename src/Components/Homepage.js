@@ -20,7 +20,6 @@ const styles = makeStyles (theme => ({
         width: "100vw",
         textAlign: "center",
         zIndex: 1
-
     }
 }));
 

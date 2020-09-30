@@ -1,19 +1,13 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import {
-    AppBar,
-    Toolbar,
-    Button,
-    Typography,
-    Box
-  } from "@material-ui/core";
-  
-
+import {AppBar, Toolbar, Button, Typography, Box} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 
 //CSS
 const styles = makeStyles((theme) => ({
-
+    root: {
+        flexGrow: 1,
+    },
     menuButton: {
       marginRight: theme.spacing(2),
     },
@@ -26,7 +20,7 @@ const styles = makeStyles((theme) => ({
 const NavigationBar = () => {
     const classes = styles();
         return(
-            <Box component="nav">
+            <Box component="nav" className={classes.root}>
                 <AppBar position = "static" style = {{background: '#222'}}>
                     <Toolbar>
                         <Typography variant="h5" className ={classes.title}>
@@ -35,8 +29,8 @@ const NavigationBar = () => {
                         <Button style = {{color: 'white'}} component={Link} to="/">
                             Home
                         </Button>
-                        <Button style = {{color: 'white'}} component={Link} to="/skills">
-                            Skills
+                        <Button style = {{color: 'white'}} component={Link} to="/aboutme">
+                            About Me
                         </Button>
                         <Button style = {{color: 'white'}} component={Link} to="/experience">
                             Experience
@@ -48,7 +42,6 @@ const NavigationBar = () => {
                             Contact
                         </Button>
                     </Toolbar>
-
                 </AppBar>
             </Box>
         );
