@@ -32,9 +32,6 @@ const NavigationBar = () => {
                         <Button style = {{color: 'white'}} component={Link} to="/aboutme">
                             About Me
                         </Button>
-                        <Button style = {{color: 'white'}} component={Link} to="/experience">
-                            Experience
-                        </Button>
                         <Button style = {{color: 'white'}} component={Link} to="/projects">
                             Projects
                         </Button>
