@@ -38,7 +38,7 @@ const Project = () => {
             <Grid container justify="center">
               {/* PID Controller */}
               <Grid item xs={12} sm={8} md={6} lg={4}>
-                <Card className={classes.topCardContainer} boxShadow={2}>
+                <Card className={classes.topCardContainer}>
                   <CardActionArea>
                     <CardMedia component="img" alt="Project 1" height="140"/>
                     <CardContent>

@@ -8,7 +8,9 @@ import {makeStyles} from '@material-ui/styles';
 const styles = makeStyles(theme => ({
     particleContainer: {
         position: "absolute",
-        opacity: "0.65"
+        opacity: "0.55",
+        width:"100%",
+        height:"100%"
     }
 }))
 
@@ -16,25 +18,25 @@ const Main = () => {
         const classes = styles()
         return (
             <>
-                <NavigationBar />
-                <Homepage />
                 <Particles
                 canvasClassName={classes.particleContainer}
                 params={{
                     particles:{
                         color: {
                             value: "#222"
-                            },
-                            line_linked: {
+                        },
+                        line_linked: {
                             color: {
                                 value: "#222"
                             }
-                            },
+                        },
                         number:{
-                            value: 60
-                        }
-                    }
+                            value: 45
+                        },
+                    }   
                 }} />
+                <NavigationBar />
+                <Homepage />
             </>
         )
 }

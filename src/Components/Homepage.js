@@ -6,7 +6,7 @@ import Typed from 'react-typed'
 //CSS
 const styles = makeStyles (theme => ({
     title: {
-        color: "#222"
+        color: "#222",
     },
     subtitle: {
         color: "#222",
