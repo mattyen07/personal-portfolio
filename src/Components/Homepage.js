@@ -32,9 +32,9 @@ const Homepage = () => {
                 </Typography>
                 <br />
                 <Typography className = {classes.subtitle} variant = "h4">
-                    <Typed strings = {["I am a Software Test Engineer at VIPRE Security", "I am a Third Year Computer Engineering Student at UBC", "I am an Aspiring Software Developer"]} 
-                    typeSpeed = {40} 
-                    backSpeed = {60} 
+                    <Typed strings = {["Software Test Engineer at VIPRE Email Security", "Third Year Computer Engineering Student at UBC", "Aspiring Software Developer"]} 
+                    typeSpeed = {45} 
+                    backSpeed = {65} 
                     loop >
                     </Typed>
                 </Typography>

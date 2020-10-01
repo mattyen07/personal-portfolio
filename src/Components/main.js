@@ -31,7 +31,7 @@ const Main = () => {
                             }
                         },
                         number:{
-                            value: 45
+                            value: 65
                         },
                     }   
                 }} />
